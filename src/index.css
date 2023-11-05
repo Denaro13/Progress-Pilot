@@ -1,0 +1,57 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  box-sizing: border-box;
+}
+.dark-theme {
+  color: hsl(234, 39%, 85%);
+  background-color: hsl(235, 21%, 11%);
+}
+body {
+  color: hsl(235, 19%, 35%);
+  background-color: hsl(0, 0%, 98%);
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.header-light {
+  background-image: url("./images/bg-mobile-light.jpg");
+  background-size: contain;
+}
+.header-dark {
+  background-image: url("./images/bg-mobile-dark.jpg");
+  background-size: contain;
+}
+
+@media (min-width: 768px) {
+  .header-light {
+    background-image: url("./images/bg-desktop-light.jpg");
+  }
+  .header-dark {
+    background-image: url("./images/bg-desktop-dark.jpg");
+  }
+}
+.todo {
+  width: 90vw;
+  max-width: 36rem;
+}
+
+.checked-icon {
+  background-color: linear-gradient hsl(192, 100%, 67%) to hsl(280, 87%, 65%);
+}
+
+.btn-container {
+  width: 90vw;
+  max-width: 36rem;
+}
+
+.text {
+  letter-spacing: 1rem;
+}
+
+.bg-check {
+  background-image: linear-gradient(hsl(192, 100%, 67%), hsl(280, 87%, 65%));
+}
