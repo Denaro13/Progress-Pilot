@@ -3,7 +3,6 @@ import Header from "./components/Header";
 import { nanoid } from "nanoid";
 import TodoItems from "./components/TodoItems";
 import { ToastContainer, toast } from "react-toastify";
-import ReorderableList from "./components/ReorderableList";
 
 const reorder = (list, startIndex, endIndex) => {
   const result = Array.from(list);
